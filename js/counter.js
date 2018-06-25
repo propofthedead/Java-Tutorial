@@ -35,14 +35,8 @@ function display(){
     }else{
         inputCtrl.style.color="black";
     }
-    if(theNumber %3==0){
-        div3=true;
-    }else{
-        div3=false;
-    }
-    if(div3){
-        inputCtrl.style.fontWeight="bold";
-    }else{
-        inputCtrl.style.fontWeight="normal";
-    }
+    var isDivisableby3= theNumber %3==0;
+    inputCtrl.style.fontWeight= (isDivisableby3) ? "bold" : "normal";
+    var isDivisableby7= theNumber %7==0;
+    inputCtrl.style.fontStyle= (isDivisableby7) ? "italic":"normal";
 }
