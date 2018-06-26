@@ -8,7 +8,7 @@ function get(){
 }
 
 
-function display(Customers){
-    document.getElementById("pId").textContent=customer.Id;
-    
+function display(Customer){
+    document.getElementById("pId").textContent=Customer.Id;
+    document.getElementById("pName").textContent=Customer.Name;
 }
