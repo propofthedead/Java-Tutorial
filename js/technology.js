@@ -1,10 +1,10 @@
 "option strict"
 
 var technolgies=[
-    {id:0,name:JavaScript,difficulty="Easy"}
+    {id:0,name:"JavaScript",difficulty:"Easy"}
 ];
 
-function loaded(){
+function load(){
     display();
 }
 
@@ -23,9 +23,9 @@ function display(){
     for(var tech of technolgies){
         var row="";
         row+= "<tr>";
-        row+= "<tr>"+ tech.id+"</tr>";
-        row+="<tr>"+tech.name+"</tr>";
-        row+= "<tr>"+tech.difficulty+"</tr>";
+        row+= "<td>"+ tech.id+"</td>";
+        row+="<td>"+tech.name+"</td>";
+        row+= "<td>"+tech.difficulty+"</td>";
         row+="</tr>";
         tbody.innerHTML+= row;
     }
