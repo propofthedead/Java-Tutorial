@@ -9,7 +9,20 @@ function loaded(){
 }
 
 function add(){
-
+    var id= document.getElementById("pId").value;
+    var name= document.getElementById("pName").value;
+    var gpa= document.getElementById("pGpa").value;
+    var sat= document.getElementById("pSat").value;
+    var year= document.getElementById("pYear").value;
+    var stud= {
+        id: id,
+        name: name,
+        gpa: gpa,
+        sat: sat,
+        year: year
+    };
+    students.push(stud);
+    display();
 }
 
 function display(){
