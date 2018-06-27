@@ -35,3 +35,17 @@ function update(){
         console.log(resp);
     });
 }
+
+function remove(){
+    var customer={
+        Id:document.getElementById("pId").value,
+        Name: document.getElementById("pName").value,
+        State: document.getElementById("pState").value,
+        City: document.getElementById("pCity").value,
+        Preferred: document.getElementById("pPreferred").checked
+    }
+    $.post("http://localhost:63558/Customers/Remove",customer)
+    .done(function(resp){
+        console.log(resp);
+    });
+}
