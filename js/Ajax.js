@@ -22,3 +22,23 @@ function display(Customers){
         tbody.innerHTML+=row;
     }
 }
+
+$(document).ready(function(){
+    $("table")
+    .css("color","red")
+    .css("font-weight","bold")
+    .css("width","1500")
+    .css("background-color","pink")
+
+    $("#tbody")
+    .css("color", "darkgreen")
+    .css("background-color","black")
+
+    $("body")
+    .css("background-color","cyan")
+
+});
+
+function goto(){
+
+}
